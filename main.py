@@ -31,4 +31,10 @@ if st.button('Predict'):
     predicted_class = trained_model.predict(input_features_array)
 
 
+    
+    st.write(f"Predicted class: {predicted_class[0]}")
+if predicted_class[0]== 1:
+    print("you will survive")
+else:
+    print("you will not survive")
        
